@@ -2,6 +2,54 @@
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
+body{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+span{
+    color: #ff0000;
+}
+
+button{
+    cursor: pointer;
+}
+
+html { 
+    background-color: #f4f4f4; /* Tema claro padrão */
+    color: #333;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+html.dark-mode {
+    background-color: #2c2c2c;
+    color: #eee;
+}
+
+html.dark-mode .greeting{
+    background-color: #2c2c2c;
+    color: #ffffff;
+}
+
+html.dark-mode .header-content {
+    background-color: #680000; 
+
+}
+
+html.light-mode .header-content {
+    background-color: #970000; 
+}
+
+html.dark-mode .greeting-paragraph a{
+    color: #ffffff;
+}
+
+html.dark-mode .greeting-paragraph{
+    color: #ffffff;
+}
+
 .header-content{
     background-color: #970000;
     display: flex;
@@ -11,36 +59,35 @@
     padding-left: 1%;
     color:#ffff;
     font-size: larger;
+    
 }
 
 .logo-image{
     width: 10%;
+    height: 10dvh;
 }
 
-.container{
+.container {
     width: 100%;
-    height: 650px;
+    height: 82dvh;
     display: flex;
-    flex-direction: row;
+    flex-direction: row;  
+    justify-content: right;
 }
 
-body{
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-.signup-box{
+.login-box{
     background-color: #f3f3f3;
-    padding: 10px;
+    padding: 5px;
+    margin-top: 5px;
+    margin-left: 5px;
     width: 100%;
-    height: 97%;
+    height: 80dvh;
     display: flex;
     align-items: center;
+    border-radius: 10px; 
 }
 
-.signup-info{
+.login-info{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -48,36 +95,40 @@ body{
     background-color: #f3f3f3;
     padding: 10px;
     width: 100%;
+    color: #000000;
 }
 
-.signup-actions{
+.login-actions{
     display: flex;
     justify-content: space-between;
     font-size: smaller;
     padding: 10px;
 }
 
-.signup-form{
+.login-form{
     display: flex;
     flex-direction: column;
     background-color: #f3f3f3;
     padding: 10px;
 }
 
-.signup-input{
+.login-input{
     border-radius: 5px;
     padding: 5px;
     border: solid #7e7e7e 0.5px;
     background-color: #ffffff;
+    height: 20px;
+    margin-top: 5px;
 }
 
-.signup-button{
+.login-button{
     background-color: #970000;
     border: none;
     border-radius: 15px;
     padding: 5px;
-    width: 25%;
+    width: 22%;
     color: #ffff;
+    font-size: 1rem;
 }
 
 .greeting{
@@ -99,4 +150,18 @@ body{
 
 .greeting-paragraph a{
     color: #000000;
+}
+
+.theme{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;  
+}
+
+.wrapper {
+    display: flex;
+    justify-content: left;
+    align-items: center; 
+    width: 100%; 
+    max-width: 100%;  
 }
